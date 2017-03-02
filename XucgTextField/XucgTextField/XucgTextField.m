@@ -52,27 +52,24 @@
 - (BOOL)shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString*)string {
     NSString *toBeString = [_textField.text stringByReplacingCharactersInRange:range withString:string];
     NSUInteger charLength = [self charLengthOf:toBeString];
-    NSLog(@"aaaaaaaaaaaa: %@, %ld", toBeString, range.length);
     if (charLength > _maxLength) {
         if (![string isEqualToString:@""]) {
             if ([self charLengthOf:_textField.text] != _maxLength) {
                 
-                //如果输入的最后一个字符是emoji, 且输入后超过最大限制字符编码, 则返回
+                // 如果输入的最后一个字符是emoji, 且输入后超过最大限制字符编码, 则返回
                 NSInteger curLength = [self charLengthOf:_textField.text];
                 NSInteger stringLength = [self charLengthOf:string];
                 if (curLength + stringLength > _maxLength && [self isContainsEmoji:string]) {
-                    NSLog(@"NO1 NO1 NO1 NO1 NO1 NO1 NO1");
                     return NO;
                 }
                 
                 [self text:toBeString shouldLessThanOrEqualTo:_maxLength];
             }
-            NSLog(@"NO2 NO2 NO2 NO2 NO2 NO2 NO2");
+
             return NO;
         }
     }
     
-    NSLog(@"YES YES YES YES YES YES YES");
     return YES;
 }
 
