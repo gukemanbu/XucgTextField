@@ -123,8 +123,7 @@
 				TargetAttributes = {
 					9E5F1CC41E680B29004C4AE0 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 4S4PWC6UGF;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -285,10 +284,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4S4PWC6UGF;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = XucgTextField/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lesports.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xucg.XucgTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -297,10 +296,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4S4PWC6UGF;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = XucgTextField/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lesports.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xucg.XucgTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -324,6 +323,7 @@
 				9E5F1CDE1E680B29004C4AE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
